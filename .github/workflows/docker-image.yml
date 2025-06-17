@@ -1,9 +1,7 @@
 name: Release Readest Docker Image
 
 on:
-  workflow_dispatch:
-  release:
-    types: [published]
+  workflow_dispatch：
 
 jobs:
   get-release:
