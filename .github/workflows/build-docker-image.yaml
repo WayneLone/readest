@@ -80,4 +80,4 @@ jobs:
           platforms: linux/amd64
           push: true
           file: ./Dockerfile
-          tags: ${{ secrets.DOCKER_NAMESPACE }}/readest:${{ needs.get-release.outputs.release_version }},${{ secrets.DOCKER_NAMESPACE }}/readest:latest
+          tags: ${{ secrets.DOCKER_REGISTRY }}/${{ secrets.DOCKER_NAMESPACE }}/readest:${{ needs.get-release.outputs.release_version }},${{ secrets.DOCKER_REGISTRY }}/${{ secrets.DOCKER_NAMESPACE }}/readest:latest
